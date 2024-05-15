@@ -1,0 +1,6 @@
+{
+  "error": "BODY_NOT_VALID",
+  "data": {
+    "email": "Path `email` is required."
+  }
+}
