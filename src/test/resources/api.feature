@@ -1,7 +1,6 @@
 @api
 Feature: Test Automation Rest API
 
-  #test get data user
   @apiGetUser
   Scenario: Test get list data user
     Given url for "GET_LIST_USERS"
@@ -18,7 +17,6 @@ Feature: Test Automation Rest API
     Then validation response body get list users by id
     Then validation response json with JSONSchema "get_list_users_by_id.json"
 
-    #Test Case Create New User
   @apiCreateUser
   Scenario: Test create new user
     Given url for "CREATE_NEW_USERS"
@@ -27,7 +25,6 @@ Feature: Test Automation Rest API
     Then validation response body create new users
     Then validation response json with JSONSchema "post_new_users.json"
 
-        #Test Case Create New User Without First Name
   @apiCreateUser
   Scenario: Test create new user without First Name
     Given url for "CREATE_NEW_USERS"
@@ -42,7 +39,6 @@ Feature: Test Automation Rest API
     Then validation status code is equals 400
     Then validation response json with JSONSchema "post_new_users_without_email.json"
 
-    #Test Case Update user
   @apiUpdateUser
   Scenario: Test update user
     Given url for "CREATE_NEW_USERS"
@@ -54,7 +50,6 @@ Feature: Test Automation Rest API
     Then validation response body update user
 
 
-    #Test Delete User
   @apiDeleteUser
   Scenario: Test delete users
     Given url for "CREATE_NEW_USERS"

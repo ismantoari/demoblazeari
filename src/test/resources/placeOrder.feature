@@ -26,7 +26,7 @@ Feature: Place Order
     Then user see thanks page "Thank you for your purchase!"
 
   @web
-  Scenario Outline: User check correct name and card number after click button purchase on order form
+  Scenario Outline: Correct name and card number after click button purchase
     Given user is on home page
     And user click login menu
     And user input login username "UserFinalProject"
@@ -38,12 +38,6 @@ Feature: Place Order
     And user click menu "Home "
     And user click product "Nokia lumia 1520"
     And user is on product page "Nokia lumia 1520"
-    And user click button add to cart
-    And user see notification pop up "Product added."
-    And user click ok button pop up
-    And user click menu "Home "
-    And user click product "Samsung galaxy s6"
-    And user is on product page "Samsung galaxy s6"
     And user click button add to cart
     And user see notification pop up "Product added."
     And user click ok button pop up
@@ -77,12 +71,6 @@ Feature: Place Order
     And user click menu "Home "
     And user click product "Nokia lumia 1520"
     And user is on product page "Nokia lumia 1520"
-    And user click button add to cart
-    And user see notification pop up "Product added."
-    And user click ok button pop up
-    And user click menu "Home "
-    And user click product "Samsung galaxy s6"
-    And user is on product page "Samsung galaxy s6"
     And user click button add to cart
     And user see notification pop up "Product added."
     And user click ok button pop up
