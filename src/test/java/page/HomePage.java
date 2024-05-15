@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import static helper.BaseTest.driver;
+import static helper.BaseTest.startDriver;
 import static helper.WebEndpoint.demoblaze;
 
 public class HomePage {
@@ -70,7 +71,7 @@ public class HomePage {
     }
 
     public void userIsOnHomePage() {
-        driver.get(demoblaze);
+       driver.get(demoblaze);
     }
 
     public void userLookAtTheTopLeftSideOfTheHomepage() {

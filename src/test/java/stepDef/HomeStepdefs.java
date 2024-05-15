@@ -49,6 +49,7 @@ public class HomeStepdefs {
 
     @Then("home page only display {string}")
     public void homePageOnlyDisplay (String productShow) throws InterruptedException {
+        Thread.sleep(2000);
         homePage.homePageOnlyDisplay(productShow);
     }
 

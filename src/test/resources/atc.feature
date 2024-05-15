@@ -33,7 +33,7 @@ Feature: Add To Cart
     Then user see product "Nokia lumia 1520" in the cart
 
   @web
-  Scenario: Same product price on homepage and product price on cart
+  Scenario: Correct product price on homepage and cart
     Given user is on home page
     And user click login menu
     And user input login username "UserFinalProject"

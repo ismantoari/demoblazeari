@@ -9,13 +9,15 @@ public class ProductPageStepdefs {
     ProductPage productPage = new ProductPage();
 
     @When("user click product {string}")
-    public void userClickProduct(String productName) {
+    public void userClickProduct(String productName) throws InterruptedException {
+        Thread.sleep(2000);
         productPage.userClickProduct(productName);
 
     }
 
     @Then("user is on product page {string}")
-    public void userIsOnProductPage(String productName) {
+    public void userIsOnProductPage(String productName) throws InterruptedException {
+        Thread.sleep(1000);
         productPage.userIsOnProductPage(productName);
     }
 
