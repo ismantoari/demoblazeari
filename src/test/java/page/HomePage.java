@@ -53,7 +53,7 @@ public class HomePage {
 
     public void userSeeNotifPopUp(String textPopup) throws InterruptedException {
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         //Alert alert = driver.switchTo().alert();
 
         //String actualTextPopup = alert.getText();

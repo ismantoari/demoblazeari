@@ -12,7 +12,7 @@ public class HomeStepdefs {
 
     @Then("user see notification pop up {string}")
     public void userSeeNotifPopUp(String textPopup) throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         homePage.userSeeNotifPopUp(textPopup);
     }
 

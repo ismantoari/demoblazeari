@@ -1,11 +1,5 @@
 Feature: Login
 
-#  @web
-#  Scenario: Open Login Form
-#    Given user is on home page
-#    When user click login menu
-#    Then pop up login will opened
-
   @web
   Scenario: Valid username and password
     Given user is on home page
@@ -42,15 +36,6 @@ Feature: Login
     And user input login password ""
     When user click login button
     Then user see notification pop up "Please fill out Username and Password."
-
-#  @web
-#  Scenario: Blank username and valid password
-#    Given user is on home page
-#    And user click login menu
-#    And user input login username ""
-#    And user input login password "FinalProject_2024"
-#    When user click login button
-#    Then user see notification pop up "Please fill out Username and Password."
 
   @web
   Scenario: Cancel Login
